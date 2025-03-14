@@ -10,6 +10,9 @@ import { fileURLToPath } from 'node:url';
 import { middlewareFirebase } from './server/middleware/firebase-init.middleware';
 import { router } from './server/modules/router';
 
+
+
+
 // Verifica e define global.__dirname se não estiver definido.
 if (typeof __dirname === 'undefined') {
   global.__dirname = dirname(fileURLToPath(import.meta.url)); // Define __dirname usando import.meta.url
