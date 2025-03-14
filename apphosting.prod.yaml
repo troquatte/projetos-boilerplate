@@ -1,0 +1,67 @@
+env:
+  - variable: ENV
+    value: prod
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: API_KEY
+    value: #VALOR DA VARIAVEL
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: AUTH_DOMAIN
+    value: #VALOR DA VARIAVEL
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: PROJECT_ID
+    value: #VALOR DA VARIAVEL
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: STORAGE_BUCKET
+    value: #VALOR DA VARIAVEL
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: MESSAGING_SENDER_ID
+    value: #VALOR DA VARIAVEL
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: API_ID
+    value: #VALOR DA VARIAVEL
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: MEASUREMENT_ID
+    value: #VALOR DA VARIAVEL
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: CERT_PROJECT_ID
+    value: #VALOR DA VARIAVEL
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: CERT_PRIVATE_KEY
+    value: |
+      -----BEGIN PRIVATE KEY-----\#VALOR DA VARIAVEL\n-----END PRIVATE KEY-----\n
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: CERT_CLIENT_EMAIL
+    value: #VALOR DA VARIAVEL
+    availability:
+      - BUILD
+      - RUNTIME

@@ -1,0 +1,23 @@
+name: Check items for pull request
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  check_items:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: npm i
+
+      - name: Build
+        run: npm run build:dev
