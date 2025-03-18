@@ -1,4 +1,6 @@
 # Projetos Boilerplate
+Basta apenas clonar, configurar que é sucesso!
+Vídeo explicativo no Youtube.
 
 ## 🔥 O que é o Firebase?
 
@@ -15,7 +17,7 @@ O Firebase é uma plataforma do Google que fornece serviços de backend para apl
 4️⃣ O serviço escala automaticamente e você paga apenas pelo uso
 ```
 
-## 🔥 Benefícios do Serverless:
+## 🔥 Benefícios do Serverless
 
 ```
 ✅ Sem necessidade de gerenciar servidores
