@@ -8,7 +8,7 @@ export class LoginPage {
 
   // Methods
   visit() {
-    cy.visit(`/${ERouters.AUTH}`);
+    cy.visit(`/`);
   }
 
   getTitle() {
