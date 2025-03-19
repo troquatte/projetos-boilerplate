@@ -41,3 +41,22 @@ O Firebase é uma plataforma do Google que fornece serviços de backend para apl
 ✅ npx cypress cache clear
 ✅ npx cypress install --force
 ```
+
+## 🐺 Husky
+
+```
+✅Rode o comando npx husky init
+
+✅ Dentro da pasta .husky
+✅ Procure o arquivo pre-commit
+    ✅Adicione o codigo:
+        #!/usr/bin/env sh
+        npx lint-staged
+
+✅ Dentro da pasta .husky -> _
+✅ Procure o arquivo husky.sh
+    ✅Adicione o codigo:
+      #!/usr/bin/env sh
+      . \"\$(dirname -- \"\$0\")/_/husky.sh\"
+```
+
