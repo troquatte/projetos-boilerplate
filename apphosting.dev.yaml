@@ -35,7 +35,7 @@ env:
       - BUILD
       - RUNTIME
 
-  - variable: API_ID
+  - variable: APP_ID
     value: #VALOR DA VARIAVEL
     availability:
       - BUILD
