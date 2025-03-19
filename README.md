@@ -34,3 +34,10 @@ O Firebase é uma plataforma do Google que fornece serviços de backend para apl
 ✅ Escalabilidade automática pelo Google Cloud
 ✅ Autenticação integrada com login social
 ```
+
+## 🛠️ Cypress local
+
+```
+✅ npx cypress cache clear
+✅ npx cypress install --force
+```
