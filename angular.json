@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/projetos-boilerplate",
+            "outputPath": "dist/projetos-boilerplatee",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -106,16 +106,16 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "projeto-exito-ava:build:production"
+              "buildTarget": "projetos-boilerplate:build:production"
             },
             "staging": {
-              "buildTarget": "projeto-exito-ava:build:staging"
+              "buildTarget": "projetos-boilerplate:build:staging"
             },
             "development": {
-              "buildTarget": "projeto-exito-ava:build:development"
+              "buildTarget": "projetos-boilerplate:build:development"
             },
             "local": {
-              "buildTarget": "projeto-exito-ava:build:local"
+              "buildTarget": "projetos-boilerplate:build:local"
             }
           },
           "defaultConfiguration": "local"
@@ -145,11 +145,11 @@
         "e2e": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "projetos-boilerplate:serve"
+            "devServerTarget": "projetos-boilerplatee:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "projetos-boilerplate:serve:production"
+              "devServerTarget": "projetos-boilerplatee:serve:production"
             }
           }
         },
