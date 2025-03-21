@@ -1,7 +1,5 @@
 /// <reference types="cypress" />
 
-import { ERouters } from '../../../src/app/enum/ERouters.enum';
-
 export class LoginPage {
   // Locators
   #locators = {};
