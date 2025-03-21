@@ -62,7 +62,39 @@
               ],
               "outputHashing": "all"
             },
+            "staging": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.staging.ts"
+                }
+              ],
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
             "development": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ],
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            },
+            "local": {
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
@@ -74,13 +106,19 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "projetos-boilerplate:build:production"
+              "buildTarget": "projeto-exito-ava:build:production"
+            },
+            "staging": {
+              "buildTarget": "projeto-exito-ava:build:staging"
             },
             "development": {
-              "buildTarget": "projetos-boilerplate:build:development"
+              "buildTarget": "projeto-exito-ava:build:development"
+            },
+            "local": {
+              "buildTarget": "projeto-exito-ava:build:local"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "local"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"

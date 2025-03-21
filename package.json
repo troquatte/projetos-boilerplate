@@ -4,12 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "build:dev": "npx ng build --configuration development",
-    "build:prod": "npx ng build --configuration production",
+    "build": "ng build --configuration $ENV",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:projetos-boilerplate": "node dist/projetos-boilerplate/server/server.mjs",
+    "serve:ssr:projeto-exito-ava": "node dist/projeto-exito-ava/server/server.mjs",
     "cy:open": "cypress open",
     "cy:ci": "cypress run"
   },

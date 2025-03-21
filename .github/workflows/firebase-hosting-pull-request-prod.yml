@@ -8,6 +8,7 @@ jobs:
   check_items:
     runs-on: ubuntu-latest
     env:
+      ENV: production
       TEST_URL: #ADICIONE A URL PARA TESTE
 
     steps:
@@ -23,7 +24,7 @@ jobs:
         run: npm i
 
       - name: Build
-        run: npm run build:prod
+        run: npm run build
 
       - name: Cypress
         run: npm run cy:ci

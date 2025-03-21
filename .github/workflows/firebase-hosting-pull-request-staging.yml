@@ -2,13 +2,13 @@ name: Check items for pull request
 on:
   pull_request:
     branches:
-      - develop
+      - staging
 
 jobs:
   check_items:
     runs-on: ubuntu-latest
     env:
-      ENV: development
+      ENV: staging
 
     steps:
       - name: Set up Node.js
