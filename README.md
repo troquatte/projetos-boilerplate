@@ -3,6 +3,11 @@
 Clone, configure e comece a desenvolver rapidamente!
 📺 Vídeo explicativo no [Link - YouTube](https://www.youtube.com/playlist?list=PLMy95_4XE08P3_C1Y5_23HS6RoQz8sDUD)
 
+```
+1️⃣ Altere o nome da pasta projetos-boilerplate para NOME-DO-PROJETO
+2️⃣ VSCODE nas buscas ( lupinha ) altere todos projetos-boilerplate para NOME-DO-PROJETO
+```
+
 ## 🔥 O que é o Firebase?
 
 O Firebase é uma plataforma do Google que fornece serviços de backend para aplicativos web e mobile. Ele facilita o desenvolvimento ao oferecer banco de dados, autenticação, hospedagem, funções serverless e outras ferramentas sem que o desenvolvedor precise gerenciar servidores.
@@ -37,9 +42,11 @@ O Firebase é uma plataforma do Google que fornece serviços de backend para apl
 ```
 
 ## 🎨 Estrutura SCSS - SMECSS
+
 Este projeto segue a estrutura SMECSS para organização dos estilos SCSS, garantindo modularidade e escalabilidade.
 
 ### 📁 Estrutura de pastas
+
 ```
 scss
 │── abstract/       # Variáveis globais e mixins
@@ -65,6 +72,7 @@ scss
 ```
 
 ### 🔹 Como usar
+
 Para garantir organização, siga estas diretrizes:
 
 ```
@@ -104,7 +112,6 @@ Para utilizar a função no projeto, basta importar o arquivo rem-calc.scss:
 }
 ```
 
-
 ## 🛠️ Cypress local
 
 ```
@@ -113,26 +120,27 @@ npx cypress install --force
 ```
 
 ## 🐺 Husky + Prettier + Eslint
+
 Para garantir qualidade de código e evitar commits com erros, este projeto usa Husky para pre-commit.
 
 ### 🔧 Configuração
 
 ### ✅ 1 - Inicialize o Husky:
+
 ```
 npx husky init
 ```
 
 ### ✅ 2 - No arquivo .husky/pre-commit, substitua:
+
 ```
 #!/usr/bin/env sh
 npx lint-staged
 ```
 
-### ✅ 3 - No arquivo .husky/_/husky.sh, substitua:
+### ✅ 3 - No arquivo .husky/\_/husky.sh, substitua:
+
 ```
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 ```
-
- 
-
