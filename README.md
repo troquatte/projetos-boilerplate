@@ -45,6 +45,8 @@ O Firebase é uma plataforma do Google que fornece serviços de backend para apl
 
 O Zod é uma biblioteca TypeScript-first para validação de esquemas de dados. Ele é útil para garantir que os dados recebidos na aplicação tenham o formato esperado, prevenindo erros em formulários, chamadas de API e outras interações.
 
+### 🔹 Como usar
+
 ```
 import { z } from "zod";
 
