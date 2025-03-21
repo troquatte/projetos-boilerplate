@@ -1,5 +1,5 @@
 export const environment = {
-  env: 'dev',
+  env: 'local',
   firebase: {
     apiKey: '#VALOR_DA_VARIAVEL',
     authDomain: '#VALOR_DA_VARIAVEL',

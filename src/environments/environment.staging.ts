@@ -1,7 +1,7 @@
 import { getEnvVariable } from '../helpers/get-env-variables.helper';
 
 export const environment = {
-  env: 'production',
+  env: 'staging',
   firebase: {
     apiKey: '#VALOR_DA_VARIAVEL',
     authDomain: '#VALOR_DA_VARIAVEL',

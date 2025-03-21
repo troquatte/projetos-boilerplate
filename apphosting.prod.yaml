@@ -17,3 +17,9 @@ env:
     availability:
       - BUILD
       - RUNTIME
+
+  - variable: CERT_CLIENT_EMAIL
+    value: #VALOR DA VARIAVEL
+    availability:
+      - BUILD
+      - RUNTIME
