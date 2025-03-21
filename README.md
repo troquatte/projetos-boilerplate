@@ -1,4 +1,4 @@
-# Boilerplate Angular Universal + Firebase 🚀
+# Boilerplate Angular Universal + Material + Firebase 🚀
 
 Clone, configure e comece a desenvolver rapidamente!
 📺 Vídeo explicativo no [Link - YouTube](https://www.youtube.com/playlist?list=PLMy95_4XE08P3_C1Y5_23HS6RoQz8sDUD)
@@ -39,6 +39,34 @@ O Firebase é uma plataforma do Google que fornece serviços de backend para apl
 ✅ Sincronização em tempo real (ideal para chats, dashboards)
 ✅ Escalabilidade automática pelo Google Cloud
 ✅ Autenticação integrada com login social
+```
+
+## 🦓 Validação de Dados com Zod
+
+O Zod é uma biblioteca TypeScript-first para validação de esquemas de dados. Ele é útil para garantir que os dados recebidos na aplicação tenham o formato esperado, prevenindo erros em formulários, chamadas de API e outras interações.
+
+```
+import { z } from "zod";
+
+const userSchema = z.object({
+  name: z.string().min(2, "O nome precisa ter pelo menos 2 caracteres"),
+  age: z.number().min(18, "A idade mínima é 18"),
+  email: z.string().email("E-mail inválido"),
+});
+
+const userData = {
+  name: "João",
+  age: 25,
+  email: "joao@email.com",
+};
+
+const result = userSchema.safeParse(userData);
+
+if (!result.success) {
+  console.error(result.error.format());
+} else {
+  console.log("Dados válidos:", result.data);
+}
 ```
 
 ## 🎨 Estrutura SCSS - SMECSS
